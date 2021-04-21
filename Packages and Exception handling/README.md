@@ -14,14 +14,18 @@ A java package is a group of similar types of classes, interfaces and sub-packag
 3. Java package removes naming collision.
 
 ![image](https://user-images.githubusercontent.com/26967135/115543443-fd2cf500-a2be-11eb-845a-17a00d767ccf.png)
+
 The package keyword is used to create a package in java.
 ### How to compile java package
 If you are not using any IDE, you need to follow the syntax given below:
+
 javac -d directory javafilename 
 
 - For example
-   javac -d . Simple.java 
-   The -d switch specifies the destination where to put the generated class file. You can use any directory name like /home (in case of Linux), d:/abc (in case of windows) etc.    If you want to keep the package within the same directory, you can use . (dot).
+   javac -d . Simple.java
+   
+      The -d switch specifies the destination where to put the generated class file. You can use any directory name like /home (in case of Linux), d:/abc (in case of windows) etc. 
+      If you want to keep the package within the same directory, you can use . (dot).
 
 ### How to run java package program
 You need to use fully qualified name e.g. mypack.Simple etc to run the class.
