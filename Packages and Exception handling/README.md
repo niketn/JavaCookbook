@@ -45,4 +45,46 @@ There are three ways to access the package from outside the package.
 #### Using packagename.classname
      If you import package.classname then only declared class of this package will be accessible.
 #### Using fully qualified name
-     If you use fully qualified name then only declared class of this package will be accessible. Now there is no need to import. But you need to use fully qualified name every time when you are
+     If you use fully qualified name then only declared class of this package will be accessible. Now there is no need to import. But you need to use fully qualified name every time when you are accessing the class or interface. It is generally used when two packages have same class name e.g. java.util and java.sql packages contain Date class.
+
+![image](https://user-images.githubusercontent.com/26967135/115544249-fb176600-a2bf-11eb-8241-56fa1fa62373.png)
+
+# EXCEPTION HANDLING IN JAVA
+The exception handling in java is one of the powerful mechanism to handle the runtime errors so  that normal flow of the application can be maintained. In java, exception is an event that disrupts the normal flow of the program. It is an object which is thrown at runtime. Exception Handling is a mechanism to handle runtime errors such as ClassNotFound, IO, SQL, Remote etc. The core advantage of exception handling is to maintain the normal flow of the application. Exception normally disrupts the normal flow of the application that is why we use exception handling.
+
+![image](https://user-images.githubusercontent.com/26967135/115544391-269a5080-a2c0-11eb-826f-dd576b4f550f.png)
+
+## Types of Exception
+There are mainly two types of exceptions: checked and unchecked where error is considered as unchecked exception. The sun microsystem says there are three types of exceptions:
+
+1. Checked Exception: The classes that extend Throwable class except RuntimeException and Error are known as checked exceptions e.g.IOException, SQLException etc. Checked 
+exceptions are checked at compile-time.
+
+2. Unchecked Exception: The classes that extend RuntimeException are known as unchecked exceptions e.g. ArithmeticException, NullPointerException, 
+ArrayIndexOutOfBoundsException etc. Unchecked exceptions are not checked at compile-time rather they are checked at runtime.
+
+3. Error: Error is irrecoverable e.g. OutOfMemoryError, VirtualMachineError, AssertionError etc.
+
+### Java try-catch
+Java try block is used to enclose the code that might throw an exception. It must be used within the method. Java try block must be followed by either catch or finally block.
+               try{ 
+               //code that may throw exception 
+               }catch(Exception_class_Name ref){} 
+
+### Java finally block
+Java finally block is a block that is used to execute important code such as closing connection, stream etc. Java finally block is always executed whether exception is handled or not. Java finally block follows try or catch block.
+
+### Java throw keyword
+The Java throw keyword is used to explicitly throw an exception. We can throw either checked or uncheked exception in java by throw keyword. The throw keyword is mainly used to throw custom exception.
+
+An exception is first thrown from the top of the stack and if it is not caught, it drops down the call stack to the previous method,If not caught there, the exception again drops down to the previous method, and so on until they are caught or until they reach the very bottom of the call stack.This is called exception propagation.
+
+### Java throws keyword
+The Java throws keyword is used to declare an exception. It gives an information to the programmer that there may occur an exception so it is better for the programmer to provide the exception handling code so that normal flow can be maintained. Exception Handling is mainly used to handle the checked exceptions. If there occurs any unchecked exception such as NullPointerException, it is programmers fault that he is not performing check up before the code being used.
+
+![image](https://user-images.githubusercontent.com/26967135/115544839-b6d89580-a2c0-11eb-9e7e-b7ad4c490138.png)
+
+
+
+
+
