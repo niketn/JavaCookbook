@@ -28,23 +28,23 @@ repaint itself in the browser. The paint() method is actually inherited from the
 ## The Applet Class
 Every applet is an extension of the java.applet.Applet class. The base Applet class provides methods that a derived Applet class may call to obtain information and services from the browser context.
 These include methods that do the following −
- Get applet parameters
- Get the network location of the HTML file that contains the applet
- Get the network location of the applet class directory
- Print a status message in the browser
- Fetch an image
- Fetch an audio clip
- Play an audio clip
- Resize the applet
+- Get applet parameters
+- Get the network location of the HTML file that contains the applet
+- Get the network location of the applet class directory
+- Print a status message in the browser
+- Fetch an image
+- Fetch an audio clip
+- Play an audio clip
+- Resize the applet
 
 Additionally, the Applet class provides an interface by which the viewer or browser obtains 
 information about the applet and controls the applet's execution. The viewer may −
- Request information about the author, version, and copyright of the applet
- Request a description of the parameters the applet recognizes
- Initialize the applet
- Destroy the applet
- Start the applet's execution
- Stop the applet's execution
+- Request information about the author, version, and copyright of the applet
+- Request a description of the parameters the applet recognizes
+- Initialize the applet
+- Destroy the applet
+- Start the applet's execution
+- Stop the applet's execution
 
 The Applet class provides default implementations of each of these methods. Those implementations may be overridden as necessary. 
 
@@ -70,8 +70,7 @@ for you and calls the init method.
 - Remove the call to setSize; for applets, sizing is done with the width and height 
 parameters in the HTML file.
 - Remove the call to setDefaultCloseOperation. An applet cannot be closed; it terminates 
-when the browser exits.GOA COLLEGE OF ENGINEERING
-161105031
+when the browser exits.
 - If the application calls setTitle, eliminate the call to the method. Applets cannot have title 
 bars. (You can, of course, title the web page itself, using the HTML title tag.)
 - Don't call setVisible(true). The applet is displayed automatically.
