@@ -21,13 +21,6 @@ Every Java thread has a priority that helps the operating system determine the o
 Interthread communication is important when you develop an application where two or more threads exchange some information.
 There are three simple methods and a little trick which makes thread communication possible. All the three methods are listed below −
 
-Sr.No.   Method & Description
-  1       public void wait()
-          Causes the current thread to wait until another thread invokes the notify().
-  2       public void notify()
-          Wakes up a single thread that is waiting on this object's monitor.
-  3       public void notifyAll()
-          Wakes up all the threads that called wait( ) on the same object.
+![image](https://user-images.githubusercontent.com/26967135/115551355-8bf23f80-a2c8-11eb-80ee-8ae6fcc7f3ac.png)
           
 These methods have been implemented as final methods in Object, so they are available in all the classes. All three methods can be called only from within a synchronized context.
-
