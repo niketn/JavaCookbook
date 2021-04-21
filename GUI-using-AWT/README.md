@@ -23,6 +23,7 @@ To create simple awt example, you need a frame. There are two ways to create a f
 
 ## Event and Listener (Java Event Handling)
 Changing the state of an object is known as an event. For example, click on button, dragging mouse etc. The java.awt.event package provides many event classes and Listener interfaces for event handling.
+
 ![image](https://user-images.githubusercontent.com/26967135/115552481-02dc0800-a2ca-11eb-91c2-cdf45b2dd32b.png)
 
 ### Steps to perform Event Handling
