@@ -12,34 +12,26 @@ OR
 type[] var-name;
 
 - An array declaration has two components: the type and the name. type declares the element type of the array. The element type determines the data type of each element that comprises the array. Like array of int type, we can also create an array of other primitive data types like char, float, double..etc or user defined data type(objects of a class).Thus, the element type for the array determines what type of data the array will hold.
+
 - Example:
 // both are valid declarations
-int intArray[]; 
-or int[] intArray; 
+int intArray[]; or int[] intArray; 
 
-byte byteArray[];
-short shortsArray[];
-boolean booleanArray[];
-long longArray[];
-float floatArray[];
-double doubleArray[];
-char charArray[];
+- byte byteArray[];
+- short shortsArray[];
+- boolean booleanArray[];
+- long longArray[];
+- float floatArray[];
+- double doubleArray[];
+- char charArray[];
 
-// an array of references to objects of the class MyClass (a class created by user)
-MyClass myClassArray[]; 
-
-Object[]  ao,        // array of Object
-Collection[] ca;  // array of Collection of unknown type
-
-## Instantiating an Array in Java
+### Instantiating an Array in Java
 When an array us declared, only a reference of array is created. To actually create or give memory to array, you create an array like this: The general form of new as it applies to one-dimensional arrays appears as follows:
 - var-name = new type [size];
 Here, type specifies the type of data being allocated, size specifies the number of elements in the array, and var-name is the name of array variable that is linked to the array. That is, to use new to allocate an array, you must specify the type and number of elements to allocate.
 - Example:
 int intArray[];    //declaring array
-intArray = new int[20];  // allocating memory to array
-OR
-int[] intArray = new int[20]; // combining both statements in one
+intArray = new int[20]; (allocating memory to array) OR int[] intArray = new int[20]; (combining both statements in one)
 
 -Note :
 1. The elements in the array allocated by new will automatically be initialized to zero (for numeric types), false (for boolean), or null (for reference types).Refer Default array values in Java
@@ -47,11 +39,11 @@ int[] intArray = new int[20]; // combining both statements in one
 
 ### Array Literal
 In a situation, where the size of the array and variables of array are already known, array literals can be used.
- int[] intArray = new int[]{ 1,2,3,4,5,6,7,8,9,10 }; //Declaring array literal
--The length of this array determines the length of the created array.
+- int[] intArray = new int[]{ 1,2,3,4,5,6,7,8,9,10 }; //Declaring array literal
+- The length of this array determines the length of the created array.
 - There is no need to write the new int[] part in the latest versions of Java
 
-## Multidimensional Arrays
+### Multidimensional Arrays
 Multidimensional arrays are arrays of arrays with each element of the array holding the reference of other array. These are also known as Jagged Arrays. A multidimensional array is created by appending one set of square brackets ([]) per dimension. 
 
 -Examples:
@@ -73,12 +65,12 @@ class multiDimensional
     }
 }
 
--int[][] intArray = new int[10][20]; //a 2D array or matrix
-- int[][][] intArray = new int[10][20][10]; //a 3D array
+- int[][] intArray = new int[10][20]; (a 2D array or matrix)
+- int[][][] intArray = new int[10][20][10]; (a 3D array)
 
-### Passing Arrays to Methods
+#### Passing Arrays to Methods
 Like variables, we can also pass arrays to methods.For example, below program pass array to method sum for calculating sum of array's values.
-// Java program to demonstrate passing of array to method
+##### Java program to demonstrate passing of array to method
  
 class Test
 {   
@@ -104,7 +96,7 @@ class Test
     }
 }
 
-### Returning Arrays from Methods
+##### Returning Arrays from Methods
 As usual, a method can also return an array. For example, below program returns an array from method m1.
 // Java program to demonstrate return of array from method
  
