@@ -8,6 +8,7 @@
    2. Distance (Point another) returns the distance from this instance to the given Point instance.
    3. Distance() returns the distance from this instance to (0,0).
 - Create a array of  Point objects and perform binary search on a particular field.(on x coordinate)
+![image](https://user-images.githubusercontent.com/26967135/115533695-9a366080-a2b4-11eb-9a3d-3237027f9d40.png)
 
 # Java is an Object-Oriented Language. As a language that has the Object-Oriented feature Java supports the following fundamental concepts −
 - Polymorphism
