@@ -5,6 +5,8 @@
 3. Draw a Bar chart and a line graph for a given set of values.
 4. Accept the Shape and it’s specification from the User and draw it.
 
+## NOTE: to execute each applet files i have used a single html file, by just changing the applet file name in the desired place/tag (so would upload only one html file)
+
 An applet is a Java program that runs in a Web browser. An applet can be a fully functional Java application because it has the entire Java API at its disposal.
 There are some important differences between an applet and a standalone Java application, including the following −
 - An applet is a Java class that extends the java.applet.Applet class.
