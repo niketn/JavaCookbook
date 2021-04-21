@@ -1,10 +1,10 @@
 ## This folder contains 5 java programs with respect to arrays and its operations
 
-1. A program that reads in 11 unique numbers, if the number is already existing display it and don’t store it in the array.
-2. A program to reverse the contents of an array.
-3. A program to write a method that returns the gcd of an unspecified number of integers. The method header is as follows.  [ public static int gcd(int…numbers ]
-4. A program to write a method that doubles the size of a double array with following header. [ public static double[] doublecapacity(double [] list) ]
-5. A program to compute the product of two matrices.
+1. A program that reads in 11 unique numbers, if the number is already existing display it and don’t store it in the array. (Filename: unique.java)
+2. A program to reverse the contents of an array.(Filename: Reverse.java)
+3. A program to write a method that returns the gcd of an unspecified number of integers.(Filename: unspecified.java) The method header is as follows.  [ public static int gcd(int…numbers ]
+4. A program to write a method that doubles the size of a double array with following header. [ public static double[] doublecapacity(double [] list) ] (Filename: dousize.java)
+5. A program to compute the product of two matrices. (Filename: matrix.java)
 
 ### The general form of a one-dimensional array declaration is
 type var-name[];
